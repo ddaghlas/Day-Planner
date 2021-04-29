@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color:#ffffff;
 }
 
 textarea {
@@ -11,6 +12,7 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width: auto;
 }
 
 .jumbotron {
@@ -19,6 +21,14 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+/* added styling to the ids */
+#currentDay,
+#currentDate,
+#currentTime {
+  font-size: 36px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .description {
@@ -50,6 +60,8 @@ textarea {
 .present {
   background-color: #ff6961;
   color: white;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .future {
@@ -63,9 +75,46 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  /* declared the cursor interaction, added padding  */
+  cursor: pointer;
+  padding: 30px 15px 15px 15px;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  /* added styling to the hover function */
+  background-color: aquamarine;
+  color: darkslateblue;
+}
+
+/* multiple machine capabilities */
+@media (max-width: 768px) {
+  .display-3,
+  .lead,
+  #currentDay,
+  #currentTime,
+  #currentDate {
+    font-size: large;
+  }
+  .saveBtn {
+    width: 15%;
+    display: flex;
+    justify-content: initial;
+    padding: 5px;
+  }
+  .row {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .time-block {
+    width: 100%;
+  }
+  .present {
+    font-size: medium;
+    font-weight: normal;
+  }
+  textarea {
+    height: 60%;
+  }
 }

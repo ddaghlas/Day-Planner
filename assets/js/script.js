@@ -64,6 +64,7 @@ for( var i = 0; i < hour.length; i++) {
     textArea.val(task); // allowing the user to save their text to local storage
 }
 
+// preventing the default reload of the browser page when the user clicks the "save" button
 $(".saveBtn").on("click", function(event) {
     event.preventDefault();
     console.log(hour[i], textArea.val());
