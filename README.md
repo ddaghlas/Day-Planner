@@ -8,7 +8,7 @@
 
 - I added if/else loops to be able to display the stylings for past, present and future events. This enables the browser to indicate past timeframes in grey, present in red and future in green. This is linked using the Moment.js library, allowing the appication to update in real-time for the user. 
 
-- When the user clicks into a timeblock, they are able to enter text for an event in that timeframe. The user then clicks the "save" button for that specific timeblock to save the text for that event in local storage. The "save" button was created outside of the HTML, utilizing the external JS file. There, I used .addClass to add the button to the container. The container class was then called as function to display the <p>, textArea and saveBtn as well as to create a method to store the text in local storage.
+- When the user clicks into a timeblock, they are able to enter text for an event in that timeframe. The user then clicks the "save" button for that specific timeblock to save the text for that event in local storage. The "save" button was created outside of the HTML, utilizing the external JS file. There, I used .addClass to add the button to the container. The container class was then called as function to display the "p" tags, textArea and saveBtn as well as to create a method to store the text in local storage.
 
 - The user can then refresh the page and still be presented with their saved events. 
 
